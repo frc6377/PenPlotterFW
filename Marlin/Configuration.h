@@ -231,7 +231,8 @@
 #define EXTRUDERS 0
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
-#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
+// TODO Depends on Pen point
+#define DEFAULT_NOMINAL_FILAMENT_DIA 1.00
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
@@ -873,10 +874,10 @@
  * details can be tuned in Configuration_adv.h
  */
 
-#define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
-#define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
-#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+//#define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
+//#define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
+//#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+//#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
 
 //===========================================================================
 //============================= Mechanical Settings =========================
@@ -1060,6 +1061,8 @@
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
+
+// TODO Do we have endstops?
 #define USE_XMIN_PLUG
 #define USE_YMIN_PLUG
 #define USE_ZMIN_PLUG
@@ -1637,7 +1640,7 @@
 #define X_ENABLE_ON 0
 #define Y_ENABLE_ON 0
 #define Z_ENABLE_ON 0
-#define E_ENABLE_ON 0 // For all extruders
+//#define E_ENABLE_ON 0 // For all extruders
 //#define I_ENABLE_ON 0
 //#define J_ENABLE_ON 0
 //#define K_ENABLE_ON 0
@@ -2242,17 +2245,17 @@
 //
 // Preheat Constants - Up to 10 are supported without changes
 //
-#define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     70
-#define PREHEAT_1_TEMP_CHAMBER 35
-#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
-
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
-#define PREHEAT_2_TEMP_CHAMBER 35
-#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+//#define PREHEAT_1_LABEL       "PLA"
+//#define PREHEAT_1_TEMP_HOTEND 180
+//#define PREHEAT_1_TEMP_BED     70
+//#define PREHEAT_1_TEMP_CHAMBER 35
+//#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+//
+//#define PREHEAT_2_LABEL       "ABS"
+//#define PREHEAT_2_TEMP_HOTEND 240
+//#define PREHEAT_2_TEMP_BED    110
+//#define PREHEAT_2_TEMP_CHAMBER 35
+//#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 // @section motion
 
@@ -2690,6 +2693,8 @@
 //   https://github.com/MarlinFirmware/New-LiquidCrystal
 //   https://github.com/fmalpartida/New-LiquidCrystal/wiki
 //
+
+// TODO Do we have one of these displays?
 //#define LCD_SAINSMART_I2C_1602
 //#define LCD_SAINSMART_I2C_2004
 
