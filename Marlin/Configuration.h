@@ -1262,7 +1262,7 @@
 
   //#define LIMITED_JERK_EDITING        // Limit edit via M205 or LCD to DEFAULT_aJERK * 2
   #if ENABLED(LIMITED_JERK_EDITING)
-    #define MAX_JERK_EDIT_VALUES { 20, 20, 0.6, 10 } // ...or, set your own edit limits
+    #define MAX_JERK_EDIT_VALUES { 20, 20, 0.6 } // ...or, set your own edit limits
   #endif
 #endif
 
@@ -2694,9 +2694,8 @@
 //   https://github.com/fmalpartida/New-LiquidCrystal/wiki
 //
 
-// TODO Do we have one of these displays?
 //#define LCD_SAINSMART_I2C_1602
-//#define LCD_SAINSMART_I2C_2004
+#define LCD_SAINSMART_I2C_2004
 
 //
 // Generic LCM1602 LCD adapter
